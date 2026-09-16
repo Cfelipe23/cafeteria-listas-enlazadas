@@ -36,8 +36,8 @@ class CafeteriaApp:
         self.ent_productos.grid(row=2, column=1, pady=5)
         
         btn_crear = tk.Button(marco_crear, text="Crear Pedido", command=self.accion_crear, bg="#4CAF50", fg="white", font=("Arial", 9, "bold"))
-        btn_crear.grid(row=3, column=0, columnspan=2, pady=10, fill=tk.X)
-        
+        btn_crear.grid(row=3, column=0, columnspan=2, pady=10, sticky="ew")
+                
         # --- SECCIÓN: GESTIÓN DE PEDIDO SELECCIONADO ---
         marco_gestion = tk.LabelFrame(panel_izquierdo, text="Gestión de Pedido Seleccionado", padx=10, pady=10)
         marco_gestion.pack(fill=tk.X)
